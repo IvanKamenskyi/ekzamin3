@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalendarz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dni, miesiace, lata...</h1>
+    </header>
+
+    <section id="date-info">
+        <p>Dzisiaj jest poniedzialek, 27-05-2024, imieniny: Placeholder Imion</p>
+    </section>
+
+    <main style="display: flex;">
+        <section id="left-block" style="width: 25%;">
+            <table>
+  <tr><th>liczba dni</th><th>miesiac</th></tr>
+  <tr><td rowspan="7">31</td><td>styczen</td></tr>
+  <tr><td>marzec</td></tr>
+  <tr><td>maj</td></tr>
+  <tr><td>lipiec</td></tr>
+  <tr><td>sierpien</td></tr>
+  <tr><td>pazdziernik</td></tr>
+  <tr><td>grudzien</td></tr>
+  <tr><td rowspan="4">30</td><td>kwiecien</td></tr>
+  <tr><td>czerwiec</td></tr>
+  <tr><td>wrzesien</td></tr>
+  <tr><td>listopad</td></tr>
+  <tr><td colspan="2">28 lub 29 – luty</td></tr>
+</table>
+
+        </section>
+
+        <section id="center-block" style="width: 40%;">
+            <h2>Sprawdz kto ma urodziny</h2>
+            <form method="post" action="kalendarz.html">
+                <input type="date" name="date" required min="2024-01-01" max="2024-12-31">
+                <button type="submit">wyslij</button>
+            </form>
+            <p>Dnia yyyy-mm-dd sa imieniny: Placeholder Imion</p>
+        </section>
+
+        <section id="right-block" style="width: 35%;">
+            <a href="https://pl.wikipedia.org/wiki/Kalendarz_Maj%C3%B3w" target="_blank">
+                <img src="kalendarz.gif" alt="Kalendarz Majow">
+            </a>
+            <h2>Rodzaje kalendarzy</h2>
+            <ol>
+                <li>Kalendarze sloneczne
+                    <ul>
+                        <li>Gregorianski</li>
+                        <li>Julijanski</li>
+                    </ul>
+                </li>
+                <li>Kalendarze ksiezycowe
+                    <ul>
+                        <li>Islamski</li>
+                        <li>Hebrajski</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Strone opracowal(a): Ivan K</p>
+    </footer>
+</body>
+</html>
+
